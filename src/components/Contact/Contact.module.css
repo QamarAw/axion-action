@@ -1,0 +1,87 @@
+.contactCard {
+  background: rgba(244, 236, 221, 0.03);
+  border: 1px solid rgba(201, 165, 104, 0.25);
+  border-radius: 16px;
+  padding: 40px 32px;
+  text-align: center;
+  max-width: 520px;
+  margin: 0 auto;
+}
+
+.contactCard h3 {
+  color: var(--color-gold-bright);
+  font-size: 1rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+  font-weight: 600;
+}
+
+.contactRow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin: 14px 0;
+  flex-wrap: wrap;
+}
+
+.contactRow a {
+  color: var(--color-beige);
+  text-decoration: none;
+  font-size: 1rem;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s, color 0.2s;
+  word-break: break-word;
+}
+
+.contactRow a:hover {
+  color: var(--color-gold-bright);
+  border-bottom-color: var(--color-gold);
+}
+
+.label {
+  font-size: 0.75rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+  min-width: 90px;
+  text-align: right;
+}
+
+.whatsappBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 22px;
+  padding: 12px 30px;
+  background: var(--color-gold);
+  color: var(--color-navy-deep);
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+  letter-spacing: 0.05em;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.whatsappBtn:hover {
+  background: var(--color-gold-bright);
+  transform: translateY(-1px);
+}
+
+@media (max-width: 480px) {
+  .contactCard {
+    padding: 32px 20px;
+  }
+
+  .contactRow {
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .label {
+    text-align: center;
+    min-width: auto;
+  }
+}

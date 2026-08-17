@@ -1,0 +1,35 @@
+@import './variables.css';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  background: var(--color-navy);
+  color: var(--color-text-light);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+#root {
+  min-height: 100vh;
+  position: relative;
+}
+
+#root::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background:
+    radial-gradient(circle at 15% 20%, rgba(201, 165, 104, 0.1) 0%, transparent 45%),
+    radial-gradient(circle at 85% 75%, rgba(201, 165, 104, 0.08) 0%, transparent 45%),
+    linear-gradient(180deg, var(--color-navy-deep) 0%, var(--color-navy) 50%, var(--color-navy-light) 100%);
+  z-index: -1;
+}

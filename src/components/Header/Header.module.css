@@ -1,0 +1,51 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 32px 20px 8px;
+}
+
+.brand {
+  text-align: center;
+}
+
+.brandMark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  border: 1.5px solid var(--color-gold);
+  border-radius: 50%;
+  margin-bottom: 14px;
+  position: relative;
+}
+
+.brandMark::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 22px;
+  height: 22px;
+  border: 1.5px solid var(--color-gold);
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.title {
+  font-size: clamp(1.6rem, 5vw, 2.4rem);
+  letter-spacing: 0.35em;
+  font-weight: 600;
+  color: var(--color-beige);
+  text-indent: 0.35em;
+}
+
+.tagline {
+  margin-top: 8px;
+  font-size: 0.85rem;
+  letter-spacing: 0.4em;
+  text-indent: 0.4em;
+  color: var(--color-gold);
+  text-transform: uppercase;
+  font-weight: 400;
+}

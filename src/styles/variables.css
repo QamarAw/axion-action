@@ -1,0 +1,16 @@
+:root {
+  --color-navy: #0b1220;
+  --color-navy-deep: #070c16;
+  --color-navy-light: #141d31;
+
+  --color-gold: #c9a568;
+  --color-gold-bright: #e8cd94;
+
+  --color-beige: #f4ecdd;
+  --color-beige-soft: #efe6d3;
+
+  --color-text-light: #f4ecdd;
+  --color-text-muted: #b8bdc9;
+
+  --font-sans: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
